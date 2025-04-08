@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        p {
+            font-size: 18px;
+        }
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1s infinite alternate;
+        }
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .buttons button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #ff4d4d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Really Sorry 😢</h1>
+        <p>Hey Shivi, I messed up, and I feel terrible about it. I never want to hurt you. Will you forgive me? 🥺❤️</p>
+        <div class="heart">❤️</div>
+        <div class="buttons">
+            <button class="yes" onclick="openLetter()">Yes, I forgive you 😘</button>
+            <button class="no" onclick="notYet()">No 😡</button>
+        </div>
+    </div>
+
+    <script>
+        function openLetter() {
+            const letter = `
+            <div class="container">
+                <h1>Dear Shivi ❤️</h1>
+                <p style="text-align: left; font-size: 17px;">
+                    I know I messed up, and I can't express how much I regret it. Tum kahin jaa hi nahi sakti — you're stuck with me, samjhi? 😈
+                    Mujhe pata hai galti meri thi, lekin mera intention kabhi tumhe hurt karne ka nahi tha. Jab tum mujhse door hoti ho, to sab kuch bekaar lagta hai. 
+                    Main bas itna chahta hoon ki tum khush raho, aur main har possible way mein try karunga tumhe khush rakhne ke liye.
+                    Kabhi kabhi misunderstandings ho jaati hain, par iska matlab yeh nahi ki hum haar maan lein. Tum mere liye sirf girlfriend nahi ho, tum meri har khushi ki wajah ho.
+                    Shayad main sab kuch ache se nahi keh pata, par tumhare bina main kuch bhi nahi hoon.
+                    Main kisi aur ke baare mein soch bhi nahi sakta. Main tumse waise hi pyaar karta hoon jaise tum ho — bina kisi condition ke.
+                    Tumhare gusse se darr nahi lagta mujhe, par tumhara silence maar deta hai. 
+                    Kal exam ke time bhi tum hi mere dimaag mein thi. Mujhe tumhari aadat ho gayi hai, Shivi... aur sach kahun to main uss aadat ke bina jee nahi sakta.
+                    Tumse ladta hoon, jhagadta hoon, par sab kuch sirf isliye kyunki main tumse har din aur zyada pyaar karta hoon.
+                    Toh please, thoda sa pyaar se baat karo, aur yeh breakup-breakup ki baatein mat karo.
+                    Tum jaise starting mein thi, waise dekhna chahta hoon tumhe — mast wali Shivi, jisse maine pehli baar dekha aur dil de baitha.
+                    I love you more than you can ever imagine. You're mine, forever. 🫶
+                </p>
+            </div>`;
+            document.body.innerHTML = letter;
+        }
+
+        function notYet() {
+            setTimeout(() => {
+                alert("No way Shivi! You're trapped with me forever 😈😉 Tap 'Yes' to see some jadu ✨");
+            }, 300);
+        }
+    </script>
+</body>
+</html>
